@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Flight Booking Landing Page</title>
+</head>
+
+<body class="font-Poppins">
+
+    <!--Hero Section-->
+
+    <section id="hero">
+        <!--Nav Bar-->
+        <nav class=" flex items-center justify-between px-8 py-4 lg:px-28 lg:py-5 ">
+            <!--Logo-->
+            <h1 class="text-3xl font-bold">Flivan</h1>
+            <!--Menu items-->
+            <div class=" hidden md:flex space-x-10 ">
+                <a href=""
+                    class="text-lightBlue font-semibold text-sm hover:text-darkerBlue transition-colors duration-300">Home</a>
+                <a href=""
+                    class="text-lightBlue font-semibold text-sm hover:text-darkerBlue transition-colors duration-300">About</a>
+                <a href=""
+                    class="text-lightBlue font-semibold text-sm hover:text-darkerBlue transition-colors duration-300">Offers</a>
+                <a href=""
+                    class="text-lightBlue font-semibold text-sm hover:text-darkerBlue transition-colors duration-300">Seats</a>
+                <a href=""
+                    class="text-lightBlue font-semibold text-sm hover:text-darkerBlue transition-colors duration-300">Destinations</a>
+            </div>
+            <!--Buttons-->
+            <div class="hidden md:block">
+                <a href=""><button
+                        class="bg-darkBlue text-white px-7 py-2 rounded-full text- hover:bg-Blue transition-all duration-300">Contact</button></a>
+            </div>
+            <!--Menu Icon-->
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-2xl hover:text-Blue"></i>
+            </div>
+        </nav>
+
+        <!--Hero Para And Image-->
+        <div class="flex flex-col mt-3  items-center text-center space-y-8 lg:my-5 ">
+            <!--Heading-->
+            <h1
+                class="capitalize text-2xl font-semibold text-darkerBlue leading-relaxed md:text-3xl lg:text-4xl lg:max-w-md lg:leading-normal ">
+                Find and
+                book a great
+                experience</h1>
+            <img src="images/header.jpg" alt="header-image" class="animate-movable">
+        </div>
+
+    </section>
+
+    <!--Main Section-->
+    <main id="features" class="flex flex-col">
+
+        <!--Ticket Option-->
+        <div class="flex flex-col  mx-5 py-8 rounded-xl space-y-8 my-10 border-4  lg:mx-20 lg:space-y-16 ">
+            <div class="flex justify-center text-xs lg:text-base">
+                <button class="text-gray-400 bg-slate-200 px-3 py-3 rounded-l-md mg:px-8 ">Economy
+                    Class</button>
+                <button class="bg-darkBlue text-white  px-3 py-3  mf:px-8 md:py-3 ">Business Class</button>
+                <button class="text-gray-400 bg-slate-200 px-3 py-3 rounded-r-md  md:px-8 ">First Class</button>
+            </div>
+            <div
+                class="grid grid-cols-1 grid-rows-4 px-3 gap-3 md:grid-cols-2 md:grid-rows-2 lg:px-8 lg:grid-cols-4 lg:grid-rows-1">
+                <!--First Part-->
+                <div class="flex space-x-3 items-center">
+                    <div>
+                        <i class="fa-solid fa-location-dot bg-slate-200 p-3 rounded-md"></i>
+                    </div>
+                    <div class="flex flex-col flex-1 space-y-1">
+                        <div class="relative ">
+                            <input type="text"
+                                class="peer w-full focus:outline-none border-b-2  border-gray-400 focus:border-darkerBlue  placeholder-transparent"
+                                id="Location" placeholder="location">
+                            <label for="location"
+                                class="absolute left-0 -top-5 text-sm text-darkerBlue font-semibold peer-placeholder-shown:text-base peer-placeholder-shown:text-darkerBlue peer-placeholder-shown:font-semibold peer-placeholder-shown:top-0 transition-all duration-300">Location</label>
+                        </div>
+                        <p class="text-[13px] mt-1">Where are you going?</p>
+                    </div>
+                </div>
+                <!--Second Part-->
+                <div class="flex space-x-3">
+                    <div>
+                        <i class="fa-regular fa-user  bg-slate-200 p-3 rounded-md"></i>
+                    </div>
+                    <div class="flex flex-col flex-1 space-y-1">
+                        <div class="relative ">
+                            <input type="text"
+                                class="peer w-full focus:outline-none border-b-2  border-gray-400 focus:border-darkerBlue  placeholder-transparent"
+                                id="travellers" placeholder="Travellers">
+                            <label for="travellers"
+                                class="absolute left-0 -top-5 text-sm text-darkerBlue font-semibold peer-placeholder-shown:text-base peer-placeholder-shown:text-darkerBlue peer-placeholder-shown:font-semibold peer-placeholder-shown:top-0 transition-all duration-300">Travellers</label>
+                        </div>
+                        <p class="text-[13px] mt-1">Add guests</p>
+                    </div>
+                </div>
+                <!--Third Part-->
+                <div class="flex space-x-3">
+                    <div>
+                        <i class="fa-regular fa-calendar bg-slate-200 p-3 rounded-md"></i>
+                    </div>
+                    <div class="flex flex-col flex-1 space-y-1 ">
+                        <div class="relative ">
+                            <input type="text"
+                                class="peer w-full focus:outline-none border-b-2  border-gray-400 focus:border-darkerBlue  placeholder-transparent"
+                                id="departure" placeholder="Departure">
+                            <label for="departure"
+                                class="absolute left-0 -top-5 text-sm text-darkerBlue font-semibold peer-placeholder-shown:text-base peer-placeholder-shown:text-darkerBlue peer-placeholder-shown:font-semibold peer-placeholder-shown:top-0 transition-all duration-300">Departure</label>
+                        </div>
+                        <p class="text-[13px] mt-1">Add date</p>
+                    </div>
+                </div>
+                <!--Fourth Part-->
+                <div class="flex space-x-3">
+                    <div>
+                        <i class="fa-regular fa-calendar bg-slate-200 p-3 rounded-md"></i>
+                    </div>
+                    <div class="flex flex-col flex-1 space-y-1">
+                        <div class="relative ">
+                            <input type="text"
+                                class="peer w-full focus:outline-none border-b-2  border-gray-400 focus:border-darkerBlue  placeholder-transparent"
+                                id="return" placeholder="Return">
+                            <label for="return"
+                                class="absolute left-0 -top-5 text-sm text-darkerBlue font-semibold peer-placeholder-shown:text-base peer-placeholder-shown:text-darkerBlue peer-placeholder-shown:font-semibold peer-placeholder-shown:top-0 transition-all duration-300">Return</label>
+                        </div>
+                        <p class="text-[13px] mt-1">Add date</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <button
+                    class="bg-darkBlue px-24 py-2 rounded-full hover:bg-Blue transition-all duration-300 lg:px-36 lg:py-3 "><i
+                        class="fa-solid fa-magnifying-glass text-white"></i></button>
+            </div>
+        </div>
+
+        <!--Support Section-->
+        <div class="flex flex-col my-8 space-y-14 lg:my-8 lg:space-y-14">
+            <!--Heading Part-->
+            <div class="flex flex-col items-center justify-center space-y-3 text-center">
+                <p class="uppercase text-sm text-darkerBlue font-semibold tracking-widest">travel support</p>
+                <h1
+                    class="capitalize text-2xl font-semibold text-darkerBlue leading-relaxed md:text-3xl lg:text-3xl lg:max-w-4xl lg:leading-normal">
+                    Plan your travel with confidence</h1>
+                <p class="text-xs text-lightBlue px-3">Find help with your bookings and travel plans, and see what to
+                    expect
+                    along your
+                    journey.</p>
+            </div>
+            <!--Image Part-->
+            <div class="max-w-7xl flex flex-col-reverse items-center mx-7 gap-28 lg:mx-auto lg:flex-row lg:gap-48  ">
+                <!--Paragraph part-->
+                <div class="flex flex-col space-y-10">
+                    <!--First Paragraph-->
+                    <div class="flex flex-col space-y-3 items-start md:items-center lg:items-start">
+                        <p class="text-white text-sm bg-darkBlue rounded-xl px-3 font-semibold">01</p>
+                        <div class="flex flex-col  items-start md:items-center lg:items-start">
+                            <h4 class="text-sm text-darkerBlue font-semibold">Travel Requirements for Dubai</h4>
+                            <p class="text-xs mt-2 text-lightBlue max-w-lg md:text-center lg:text-start">Stay informed
+                                and prepared
+                                for
+                                your trip to
+                                Dubai
+                                with essential
+                                trouble
+                                requirements,
+                                ensuring a smooth and hassle-free experience in this vibrant and captivating city.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Second Paragraph-->
+                    <div class="flex flex-col space-y-3 items-start md:items-center lg:items-start">
+                        <p class="text-white text-sm bg-orange-500 rounded-xl px-3 font-semibold">02</p>
+                        <div class="flex flex-col  items-start md:items-center lg:items-start">
+                            <h4 class="text-sm text-darkerBlue font-semibold">Multi-task travel insurance</h4>
+                            <p class="text-xs mt-2 text-lightBlue max-w-lg md:text-center lg:text-start">
+                                Comprehensive protection for your peace of mind, covering a range of
+                                potential travel risks and unexpected situations.
+                            </p>
+                        </div>
+                    </div>
+                    <!--Third Paragraph-->
+                    <div class="flex flex-col space-y-3 items-start md:items-center lg:items-start">
+                        <p class="text-white text-sm bg-orange-300 rounded-xl px-3 font-semibold">03</p>
+                        <div class="flex flex-col  items-start md:items-center lg:items-start">
+                            <h4 class="text-sm text-darkerBlue font-semibold">Travel Requirements by destinations</h4>
+                            <p class="text-xs mt-2 text-lightBlue max-w-lg md:text-center lg:text-start">
+                                Stay informed and plan your trip with ease, as we provide up-to-date
+                                information on travel requirements specific to your desired
+                                destinations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Image-->
+                <div class="flex max-w-md mx-auto mt-12 animate-movable lg:max-w-xl lg:mt-7 ">
+                    <img src="images/plan-1.jpg" alt="plane-image" class="w-2/4 rounded-full z-10 translate-y-10  ">
+                    <img src="images/plan-2.jpg" alt="plane-image"
+                        class="w-2/4 rounded-full -translate-x-1/2 -translate-y-10 ">
+                    <img src="images/plan-3.jpg" alt="plane-image"
+                        class="w-2/4 rounded-full -translate-x-[95%] -z-10 translate-y-10">
+                </div>
+            </div>
+        </div>
+
+        <!--Travel Part-->
+        <div class="flex flex-col bg-gray-200 space-y-10 py-10 my-8 lg:my-20">
+            <!--Heading Part-->
+            <div
+                class="flex flex-col items-center text-center space-y-6 lg:flex-row lg:justify-between lg:items-baseline lg:px-24 lg:text-start ">
+                <h1
+                    class="capitalize text-xl font-semibold text-darkerBlue leading-relaxed px-3 md:text-2xl lg:max-w-2xl lg:leading-normal lg:px-0">
+                    Travel to make memories all around the world
+                </h1>
+                <a href=""><button
+                        class="px-6 py-2 rounded-full border-2 border-darkerBlue text-sm hover:bg-Blue hover:text-white  transition-colors duration-300 ">View
+                        all</button></a>
+            </div>
+            <!--Boxes Part-->
+            <div
+                class="grid grid-cols-1 grid-rows-3 gap-5 mx-7 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 lg:mx-20">
+                <!--First Box-->
+                <div class="bg-white rounded-2xl shadow-md py-8 text-center flex flex-col items-center space-y-4">
+                    <div class="bg-darkBlue rounded-full px-6 py-5 ">
+                        <ion-icon name="calendar-number-outline" class="text-white text-3xl"></ion-icon>
+                    </div>
+                    <h4 class="text-darkBlue font-semibold text-sm">Book & relax</h4>
+                    <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs">With "Book & relax", you can sit back, unwind,
+                        and enjoy
+                        the
+                        journey while we
+                        take care of
+                        everything else.</p>
+                </div>
+                <!--Second Box-->
+                <div class="bg-white rounded-2xl shadow-md py-8 text-center flex flex-col items-center space-y-4">
+                    <div class="bg-orange-500 rounded-full px-6 py-5 ">
+                        <ion-icon name="shield-checkmark-outline" class="text-white text-3xl"></ion-icon>
+                    </div>
+                    <h4 class="text-darkBlue font-semibold text-sm">Smart Checklist</h4>
+                    <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs">Introducing Smart Checklist with us, the
+                        innovative solution revolutionzing the way you travel with our airline.</p>
+                </div>
+                <!--Third Box-->
+                <div class="bg-white rounded-2xl shadow-md py-8 text-center flex flex-col items-center space-y-4">
+                    <div class="bg-darkBlue rounded-full px-6 py-5 ">
+                        <ion-icon name="bookmark-outline" class="text-white text-3xl"></ion-icon>
+                    </div>
+                    <h4 class="text-darkBlue font-semibold text-sm">Save More</h4>
+                    <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs">From discounted ticket prices to exclusive
+                        promotion and deals, we prioritize affordability without compromising on quality.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Minor League Part-->
+        <div
+            class="max-w-7xl flex flex-col items-center pb-8 space-y-28 lg:flex-row lg:mx-auto lg:space-y-0 lg:gap-28 ">
+            <!--Image Part-->
+            <div class="flex  justify-center animate-movable pl-5 max-w-sm md:max-w-md  lg:max-w-xl lg:pl-0">
+                <img src="images/lounge-1.jpg" alt="lounge-1" class="w-2/4 rounded-full  ">
+                <img src="images/lounge-2.jpg" alt="lounge-2"
+                    class="w-2/5 h-2/5 rounded-full -translate-x-14 translate-y-28">
+            </div>
+            <!--Paragraph Part-->
+            <div class="flex flex-col space-y-6 md:space-y-10 items-center lg:items-start">
+                <!--Heading part-->
+                <h1
+                    class="capitalize text-xl font-semibold text-darkerBlue text-center max-w-xs leading-relaxed px-3 md:text-2xl lg:text-3xl lg:max-w-2xl lg:leading-normal lg:text-start lg:px-0">
+                    Unaccompanied Minor League
+                </h1>
+                <!--Features League-->
+                <div class="grid grid-col-1 gap-9 px-7 md:grid-cols-2 md:grid-rows-2 lg:px-0">
+                    <!--First Para-->
+                    <div class="flex flex-col space-y-2  ">
+                        <h3 class=" text-darkerBlue font-semibold">Experience Tranquality </h3>
+                        <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs lg:text-sm">Serenity Heaven offers a
+                            tranquil escape,
+                            featuring comfortable seating, calming, ambiance
+                            and attentive service.</p>
+                    </div>
+                    <!--Second Para-->
+                    <div class="flex flex-col space-y-2 ">
+                        <h3 class=" text-darkerBlue font-semibold">Elevate Your Experience</h3>
+                        <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs lg:text-sm">Designated for discerning
+                            travelers, this
+                            exclusive lounge pffers premium amenities, assistance and private workspaces.</p>
+                    </div>
+                    <!--Third Para-->
+                    <div class="flex flex-col space-y-2 ">
+                        <h3 class=" text-darkerBlue font-semibold">A welcoming Space</h3>
+                        <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs lg:text-sm">Creating a famoly-friendly
+                            atmosphere. The
+                            Family zone is the perfect haven for parents and children.</p>
+                    </div>
+                    <!--Fourth Para-->
+                    <div class="flex flex-col space-y-2 ">
+                        <h3 class=" text-darkerBlue font-semibold">A Culinary Delight</h3>
+                        <p class="text-xs text-gray-400 max-w-sm lg:max-w-xs lg:text-sm">Immense yourself in a world of
+                            flavors,
+                            offering international cuisines, gourment, dishes and carefully curated beverages.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Best Traveller Part-->
+        <div class="flex flex-col space-y-10 py-10 lg:px-24 md:py-12  lg:space-y-16">
+            <!--Heading Part-->
+            <h1
+                class="capitalize text-xl font-semibold text-darkerBlue text-center leading-relaxed px-3 md:text-2xl lg:text-3xl lg:leading-normal  lg:px-0">
+                Best travellers of the month
+            </h1>
+            <!--Boxes Part-->
+            <div
+                class="grid grid-cols-1 grid-rows-4 mx-auto gap-7 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
+                <!--First Box-->
+                <div class="border-b-2 overflow-hidden shadow-xl rounded-b-3xl">
+                    <img src="images/traveller-1.jpg" alt="traveller" class="w-80 rounded-t-3xl ">
+                    <div class="flex flex-col space-y-10 relative text-center">
+                        <img src="images/client-1.jpg" alt=""
+                            class="absolute max-w-[70px] top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white rounded-full  ">
+                        <div class="pb-3">
+                            <h4 class=" text-darkerBlue  font-semibold">Emily Johnson </h4>
+                            <p class="text-gray-400 text-sm mt-1">Dubai</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Box-->
+                <div class="border-b-2 overflow-hidden shadow-xl rounded-b-3xl">
+                    <img src="images/traveller-2.jpg" alt="traveller" class="w-80 rounded-t-3xl ">
+                    <div class="flex flex-col space-y-10 relative text-center">
+                        <img src="images/client-2.jpg" alt=""
+                            class="absolute max-w-[70px] top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white rounded-full  ">
+                        <div class="pb-3">
+                            <h4 class=" text-darkerBlue font-semibold">Davis Smith</h4>
+                            <p class="text-gray-400 text-sm mt-1">Paris</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Third Box-->
+                <div class="border-b-2 overflow-hidden shadow-xl rounded-b-3xl">
+                    <img src="images/traveller-3.jpg" alt="traveller" class="w-80 rounded-t-3xl ">
+                    <div class="flex flex-col space-y-10 relative text-center">
+                        <img src="images/client-3.jpg" alt=""
+                            class="absolute max-w-[70px] top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white rounded-full  ">
+                        <div class="pb-3">
+                            <h4 class=" text-darkerBlue  font-semibold">Olivia Brown</h4>
+                            <p class="text-gray-400 text-sm mt-1">Singapore</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fourth Box-->
+                <div class="border-b-2 overflow-hidden shadow-xl rounded-b-3xl">
+                    <img src="images/traveller-4.jpg" alt="traveller" class="w-80 rounded-t-3xl ">
+                    <div class="flex flex-col space-y-10 relative text-center">
+                        <img src="images/client-4.jpg" alt=""
+                            class="absolute max-w-[70px] top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-white rounded-full  ">
+                        <div class="pb-3">
+                            <h4 class=" text-darkerBlue  font-semibold">Daniel Taylor</h4>
+                            <p class="text-gray-400 text-sm mt-1">Malaysia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Newsletter Part-->
+        <div class="bg-gray-200 py-14 flex flex-col items-center text-center mt-8 space-y-6">
+            <!--Heading Part-->
+            <h1
+                class="capitalize text-xl font-semibold text-darkerBlue text-center max-w-xs leading-relaxed px-3 md:text-2xl lg:text-3xl lg:max-w-2xl lg:leading-normal lg:text-start lg:px-0">
+                Subscribe newsletter & get latest news
+            </h1>
+            <!--Input Part-->
+            <div class="relative">
+                <input type="text" name="" id="name" placeholder="Enter your email here"
+                    class="w-72 py-3 rounded-3xl text-xs focus:outline-none  pl-5 md:w-96 ">
+                <button
+                    class="bg-darkBlue text-white py-1 px-4 text-sm rounded-full absolute right-1 top-[6px] hover:bg-Blue transition duration-500 ">Subscribe</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Footer-->
+
+    <div class="bg-darkBlue pt-10 pb-5 space-y-14">
+        <div class="flex flex-col space-y-10  lg:flex-row justify-evenly px-10">
+            <!--Description Part-->
+            <div class="flex flex-col space-y-5 text-white">
+                <h4 class="font-semibold text-2xl">Flivan</h4>
+                <p class="text-xs max-w-xl">
+                    Where Excellence Takes Flight. With a strong commitment to customer
+                    satisfaction and a passion for air travel, Flivan Airlines offers
+                    exceptional service and seamless journeys.
+                </p>
+                <p class="text-xs max-w-xl">
+                    From friendly smiles to state-of-the-art aircraft, we connect the
+                    world, ensuring safe, comfortable, and unforgettable experiences.
+                </p>
+            </div>
+            <!--Information Part-->
+            <div class="flex flex-col text-white space-y-4">
+                <h4 class="font-semibold">Information</h4>
+                <div class="text-xs flex flex-col space-y-2">
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Home</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>About</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Offers</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Seats</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Destinations</p>
+                    </a>
+                </div>
+            </div>
+            <!--Contact Part-->
+            <div class="flex flex-col text-white space-y-4">
+                <h4 class="font-semibold">CONTACT</h4>
+                <div class="text-xs flex flex-col space-y-2">
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Support</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Media</p>
+                    </a>
+                    <a href="" class="hover:text-Blue hover:font-semibold transition duration-300">
+                        <p>Socials</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Contact Option-->
+        <div class="flex flex-col items-center justify-between space-y-6 text-white px-8">
+            <hr class=" border-white w-3/4">
+            <p class="text-sm text-center">Copyright 2023 Hina Hotak. All rights reserved</p>
+            <div class="flex space-x-3 lg:space-x-6">
+                <a href=""><ion-icon name="logo-facebook"
+                        class="hover:text-Blue transition duration-300 lg:text-xl"></ion-icon></a>
+                <a href=""> <ion-icon name="logo-twitter"
+                        class="hover:text-Blue transition duration-300 lg:text-xl "></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"
+                        class="hover:text-Blue transition duration-300 lg:text-xl"></ion-icon></a>
+                <a href=""><ion-icon name="logo-youtube"
+                        class="hover:text-Blue transition duration-300 lg:text-xl"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
